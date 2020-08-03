@@ -1,0 +1,23 @@
+﻿@model Candle
+@if (TempData.Peek("Success") != null)
+{
+    @TempData["Success"]
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Candle Type
+            </th>
+            <th>
+              Candle Price
+            </th>
+            <th>
+              Scent
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    </table>
+  

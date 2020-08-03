@@ -1,0 +1,21 @@
+﻿
+@{
+}
+@model List<Candle>
+
+<table class="table">
+    <thead>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <th>
+                    @product.Scent
+                </th>
+                <th>
+                    @product.CandlePrice
+                </th>
+            </tr>
+        }
+    </thead>
+</table>
+<p>The total of your order is @ViewBag.Total</p>
